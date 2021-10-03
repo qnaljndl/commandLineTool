@@ -1,0 +1,25 @@
+Application: Operation to execute in MongoDB. This Application is capable to perform basic operations (insert,get,delete) in Database using command line. 
+
+cd ~/CommandLineTool/
+~/CommandLineTool$ source venv/bin/activate
+
+
+------------------------------------------------------------
+Please provide values to do Operations in DB
+For Example (INSERT)- filename -o insert -u Kunal -l Mumbai
+For Example (GET)   - filename -o get -u Kunal/-l Mumbai -f username/location/username,location
+For Example (DELETE) -filename -o delete -u Kunal / -l Mumbai
+-------------------------------------------------------------
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -o Operation_to_execute
+                        Choose value from given list only ['insert','get','delete']
+  -u username           Enter Data, For Example: -u Kunal
+  -l location           Enter Data, For Example: -l Mumbai
+  -f fields             Enter Fields you want to get in your output, For Example: -f username / location (optional parameter)
+
+
+Used MongoDB as Database layer
+Fields in Document - ID, username, location
+
